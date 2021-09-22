@@ -29,13 +29,20 @@
                 <form method="POST">
                     <fieldset>
                         <legend>Log In</legend>
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" placeholder="example@domain.com"><br>
-                        <label for="password">Password</label><br>
-                        <input type="password" name="password" placeholder="Password">
-                        <br><br>
-                        <a href="./loggedin.html"><input type="button" name="button" value="Submit"></a><br><br>
-                        if you don`t have <a class="term" href="./signup.html">Create</a> an account with us
+                        <div class="label0">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="example@domain.com"><br>
+                        </div>
+                        <div class="label0">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+                        
+                        <div class="login_button">
+                            <a class="term" href="./login.html">Forgot Password</a><br><br>
+                            <a href="./loggedin.html"><input class="button" type="button" name="button" value="Submit"></a><br><br>
+                            if you don`t have <a class="term" href="./signup.html">Sign Up</a> an account with us
+                        </div>
                     </fieldset>
                 </form>
             </section>
