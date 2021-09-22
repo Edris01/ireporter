@@ -1,0 +1,94 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: 15% auto 10%;
+    min-height: 100vh;
+}
+header{
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+nav{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    width: 100%; 
+}
+footer{
+    background-color: aqua;
+    position: relative;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(225, 225, 225);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(225, 0, 0);
+}
+.name{
+    text-align: center;
+    font-size: 25px;
+    color: blanchedalmond;
+}
+.link-holder{
+    text-align: right;
+    padding: 15px;
+}
+.footer-content{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+img{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    
+}
+.link{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+form{
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+a.term{
+    color: rgb(142, 8, 160);
+}
+input{
+    font-size: 25px;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+}
+.admin-container{
+    display: grid;
+    grid-template-rows: 20% auto 10%;
+    min-height: 100vh;
+}
+section{
+    padding: 20px 20px 0px 20px;
+    background-image: url(../image/corrupt.jpg);
+    /*background-size: 100% 100%;*/
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
