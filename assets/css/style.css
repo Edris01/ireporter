@@ -28,7 +28,12 @@ footer{
 .contact{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    text-align: center;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0rem 1rem;
 }
 a{
     font-size: 20px;
