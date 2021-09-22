@@ -28,7 +28,12 @@ footer{
 .contact{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    text-align: center;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0rem 1rem;
 }
 a{
     font-size: 20px;
@@ -66,18 +71,16 @@ img{
 }
 form{
     font-size: 25px;
-    text-align: center;
-    align-items: center;
     height: 100%;
 }
 a.term{
-    color: rgb(142, 8, 160);
+    color: rgb(225, 225, 225);
 }
 input{
     font-size: 25px;
 }
 textarea{
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 .admin-container{
@@ -91,4 +94,10 @@ section{
     /*background-size: 100% 100%;*/
     background-repeat: repeat-x;
     background-attachment: fixed;
+}
+.label0{
+    display: grid;
+    grid-template-columns: 30% auto;
+    column-gap: 1rem;
+    padding: 10px 0px 10px 0px;
 }
