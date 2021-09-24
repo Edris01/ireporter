@@ -126,25 +126,23 @@ legend{
 }
 .home0{
     display: grid;
-    grid-template-columns: auto 60%;
+    grid-template-columns: 40% auto;
+    column-gap: 1rem;
     align-items: center;
-    margin: 0;
 }
 .home1{
     align-items: center;
     min-height: auto;
 }
 .home2{
-    width: 500px;
-    height: 510px;
+    width: 510px;
+    height: 500px;
     border-radius: 30px;
 }
 .home3{
     text-align: left;
     font-size: 20px;
     font-family: sans-serif;
-    padding: 0px;
-    margin: 0px;
 }
 .home6{
     display: grid;
