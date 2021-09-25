@@ -107,7 +107,7 @@ q{
     font-size: 25px;
     text-align: center;
 }
-.button{
+#button{
     width: 3fr;
     height: 2fr;
     background-color: #000000;
