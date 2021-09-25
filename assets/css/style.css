@@ -126,7 +126,7 @@ legend{
 }
 .home0{
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 35% auto;
     column-gap: 1rem;
     align-items: center;
     min-height: auto;
@@ -137,7 +137,7 @@ legend{
     overflow: hidden;
 } */
 .home2{
-    width: 100%;
+    width: 450px;
     height: 500px;
     border-radius: 30px;
 }
