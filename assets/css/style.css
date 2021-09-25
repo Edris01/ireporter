@@ -88,9 +88,6 @@ input{
 }
 section{
     padding: 10px 10px 0px 20px;
-    display: grid;
-    grid-template-rows: auto 40%;
-    
 }
 .label0{
     display: grid;
