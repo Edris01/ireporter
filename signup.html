@@ -30,37 +30,37 @@
                     <fieldset>
                         <legend>Sign up to become a Reporter</legend>
                         <div class="label0">
-                            <label>First Name:</label>
-                            <input type="text" name="first name" placeholder="First Name">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" name="first name" placeholder="First Name" required>
                         </div>
                         <div class="label0">
-                            <label>Last Name:</label>
-                            <input type="text" name="last name" placeholder="Last Name">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="last name" placeholder="Last Name" required>
                         </div>
                         <div class="label0">
-                            <label>Date Of Birth:</label>
-                            <input type="date" name="date of birth">
+                            <label for="date of birth">Date Of Birth:</label>
+                            <input type="date" name="date of birth" required>
                         </div>
                         <div class="label0">
-                            <label>Email:</label>
-                            <input type="email" name="email" placeholder="example@domain.com">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="example@domain.com" required>
                         </div>
                         <div class="label0">
-                            <label>Phone Number:</label>
-                            <input type="number" name="phone number" placeholder="Phone Number">
+                            <label for="number">Phone Number:</label>
+                            <input type="tel" name="phone number" required pattern="^\d{10}$" placeholder="0700000000">
                         </div>
                         <div class="label0">
-                            <label>Password:</label>
-                            <input type="password" name="password" placeholder="Enter Password">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" placeholder="Enter Password" required minlength="8">
                         </div>
                         <div class="label0">
-                            <label>Confirm Password:</label>
-                            <input type="password" name="confirm Password" placeholder="Confirm Password">
+                            <label for="re-confirm">Confirm Password:</label>
+                            <input type="password" name="confirm Password" placeholder="Confirm Password" required minlength="8">
                         </div>
                         <br>
                         <div class="login_button">
                             By creating the account you agree with our <a class="term" href="./T&C.html">Terms and Conditions</a><br><br>
-                            <a href="./loggedin.html"><button class="button" type="button" onclick="alert(sure)">Create Account</button></a><br><br>
+                            <a href="./loggedin.html"><button id="button" type="submit" name="create an account" onclick="alert(sure)">Create Account</button></a><br><br>
                             I have an account with you <a class="term" href="./login.html">Login</a>
                         </div>
                     </fieldset>
