@@ -166,3 +166,12 @@ hr{
     border-radius: 30px;
     float: right;
 }
+input:valid{
+    border: 1px solid black;
+}
+input:invalid{
+    border: 1px solid red;
+}
+/* input:invalid:required{
+    border: 1px solid orange;
+} */
