@@ -6,7 +6,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 15% auto 10%;
+    grid-template-rows: 15% auto 8%;
     min-height: 100vh;
 }
 header{
@@ -87,11 +87,10 @@ input{
     min-height: 100vh;
 }
 section{
-    padding: 20px 20px 0px 20px;
-    background-image: url(../image/corrupt.jpg);
-    /*background-size: 100% 100%;*/
-    background-repeat: repeat-x;
-    background-attachment: fixed;
+    padding: 10px 10px 0px 20px;
+    display: grid;
+    grid-template-rows: auto 40%;
+    
 }
 .label0{
     display: grid;
@@ -120,8 +119,50 @@ q{
     text-align: center;
 }
 legend{
-    color: #f5f0f0;
+    color: #f01111;
     font-weight: bold;
     font-style: oblique;
     font-size: 30px;
+}
+.home0{
+    display: grid;
+    grid-template-columns: 35% auto;
+    column-gap: 1rem;
+    align-items: center;
+    min-height: auto;
+}
+/* .home1{
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+} */
+.home2{
+    width: 450px;
+    height: 500px;
+    border-radius: 30px;
+}
+.home3{
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.home6{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.home7{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+h1{
+    color: #e10000;
+}
+hr{
+    border: 2px solid black;
+}
+.home8{
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
+    float: right;
 }
