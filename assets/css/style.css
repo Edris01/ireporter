@@ -88,6 +88,7 @@ input{
 }
 section{
     padding: 10px 10px 0px 20px;
+    margin: 0;
 }
 .label0{
     display: grid;
@@ -169,33 +170,61 @@ input:valid{
 input:invalid{
     border: 1px solid #ff0000;
 }
-/* input:invalid:required{
-    border: 1px solid orange;
-} */
+
+/* terms and conditions page */
+.tc-container{
+    display: grid;
+    grid-template-rows: 10% auto 8%;
+    margin: 0px 0px;
+    min-height: 100vh;
+}
+.t2{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: #16bbee;
+    align-items: center;
+}
+.t3{
+    color: white;
+    font-size: 35px;
+    text-align: right;
+    padding: 0px 20px;
+}
 .tc0{
-    display: grid;
-    grid-template-rows: 5% 95%;
-    margin: 0;
-}
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+} 
 .tc1{
-    text-align: center;
-    font-size: 45px;
-    color: #a52a2a;
-}
-.tc3{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 5px;
-}
-.tc4{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.tc5{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif; 
+footer.tEnd{
+    background-color:#16bbee ;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 1rem;
 }
-.tc6{
-    float: right;
+.tcEnd{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.treatParagraph{
+    display: grid;
+    grid-template-columns: 20% 70%;
+}
+.number{
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.end0{
+    text-align: center;
     padding-right: 20px;
+    padding-top: 20px;
+}
+.biz-name{
+    text-align: center;
+    font-size: 25px;
+    color: #000000
 }
