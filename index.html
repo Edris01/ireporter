@@ -9,7 +9,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
             <header>
                 <div class="contact">
                     <div class="contacts"><img src="./assets/image/twitter.png" alt="twitter logo"> @i-reporterUG</div>
@@ -17,46 +17,146 @@
                     <div class="contacts"><img src="./assets/image/gmail.png" alt="instagram logo"> irepoarter</div>
                     <div class="contacts"><img src="./assets/image/gmail.png" alt="gmail logo"> irepoarter@gmail.com</div>
                 </div>
-                <nav>
-                    <div class="name">i-Reporter</div>
-                    <div class="link-holder">
-                        <a class="link" href="./index.html">Home</a>
-                        <a class="link" href="./contactus.html">Contact Us</a>
-                        <a class="link" href="./login.html">Login</a>
-                        <a class="link" href="./signup.html">Sign Up</a>
-                    </div>
+                <nav class="sticky pb-5">
+                    <div class="name text-end pb-1">i-Reporter</div>
+                    <div class="link-holder d-flex gap-2 justify-content-end">
+                      <a type="button" class="link text-decoration-none pb-1 btn text-light" href="./index.html">Home</a>
+                      <a type="button" class="link text-decoration-none pb-1 btn  text-light" href="./contactus.html">Contact Us</a>
+                        
+                        <!-- <a class="link" href="./login.html">Login</a> -->
+                        <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#myModal">
+                          Login
+                        </button>
+                        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+
+                              <div class="modal-header bg-info">
+                                <h4 class="modal-title">Login</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                              </div>
+
+                              <div class="modal-body">
+                                <form method="" class="form text-start">
+                                      <div class="label0">
+                                          <label for="email">Email:</label>
+                                          <input type="email" name="email" placeholder="example@domain.com" required><br>
+                                      </div>
+                                      <div class="label0">
+                                          <label for="password">Password:</label>
+                                          <input type="password" name="password" placeholder="Password" required minlength="8">
+                                      </div>
+                                      
+                                      <div class="login_button">
+                                          <a class="term" href="#">Forgot Password</a>
+                                          <br><br>
+                                          <button id="button" type="submit" name="login"><a href="./loggedin.html">Login</a></button>
+                                          <br><br>
+                                          <h6>if you don`t have <a class="term" href="#" id="#miles">Sign Up</a> an account with us</h6>
+                                      </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <a class="link" href="./signup.html">Sign Up</a> -->
+                        <div class="">
+                          <button class="btn text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#miles">
+                            SignUp
+                          </button>
+                        </div>
+                        <div class="offcanvas offcanvas-end" style="width: 80%;" id="miles">
+                          <div class="offcanvas-header bg-info">
+                            <h3 class="offcanvas-title">Sign up to become a Reporter</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                          </div>
+                          <div class="offcanvas-body text-start">
+                            <form method="post" class="form">
+                                  <div class="label0">
+                                      <label for="firstname">First Name:</label>
+                                      <input type="text" name="first name" placeholder="First Name" required>
+                                  </div>
+                                  <div class="label0">
+                                      <label for="lastname">Last Name:</label>
+                                      <input type="text" name="last name" placeholder="Last Name" required>
+                                  </div>
+                                  <div class="label0">
+                                      <label for="date of birth">Date Of Birth:</label>
+                                      <input type="date" name="date of birth" required>
+                                  </div>
+                                  <div class="label0">
+                                      <label for="email">Email:</label>
+                                      <input type="email" name="email" placeholder="example@domain.com" required>
+                                  </div>
+                                  <div class="label0">
+                                      <label for="number">Contact:</label>
+                                      <input type="tel" name="phone number" required pattern="^\d{10}$" placeholder="0700000000">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="password">Password:</label>
+                                      <input type="password" name="password" placeholder="Enter Password" required minlength="8">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="re-confirm">Confirm password:</label>
+                                      <input type="password" name="confirm Password" placeholder="Confirm Password" required minlength="8">
+                                  </div>
+                                  <br>
+                                  <div class="login_button">
+                                      <h3>By creating the account you agree with our <a class="term" target="_blank" href="./terms.html">Terms and Conditions</a></h3><br>
+                                      <a href="./loggedin.html"><button id="button" type="submit" name="create an account" onclick="alert(sure)">Create Account</button></a><br><br>
+                                      <h4>I have an account with you <a class="term" href="#">Login</a></h4>
+                                      <br>
+                                      <br>
+                                      <br>
+                                  </div>
+                                </form>
+                          </div>
+                        </div>
                 </nav>
             </header>
             <section>
-              <div class="home0">
-                <div class="home1">
-                  <img class="home2" src="./assets/image/corrupt.jpg" alt="corruption image" />
+              
+              <div class="carousel side pt-0" id="demo" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active element-background-overlay">
+                    <img src="./assets/image/corruption.jpg" alt="corruption" class="d-block h-50" style="width: 100%;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/image/corruption.jpg" alt="corruption" class="d-block h-50" style="width: 100%;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/image/corruption.jpg" alt="corruption" class="d-block h-25" style="width: 100%;">
+                  </div>
                 </div>
+              </div>
+              <div class="home0 pt-0">
+                <!-- <div class="home1">
+                  <img class="home2" src="./assets/image/corrupt.jpg" alt="corruption image" />
+                </div> -->
                 <div class="home3">
-                  <h1>Welcome.</h1>
+                  <!-- <h1>Welcome.</h1> -->
                   <p>
-                    <cite>i-reporter</cite> is a web-based application that is
+                    <h3 class="text-danger">i-reporter</h3> is a web-based application that is
                     designed to fight corruption. in the world and this can be made by
                     you helping us and you raise corruption issues through opening an
                     account with us.
+                    Thanks for you coperation for God and my country mission free
+                    corruption world with trasparent budgets.
                   </p>
-                  <p>
+                  <!-- <p>
                     And by that can help us follow up for easy tracking of that give
                     file number basing on the content upload files forexample the
                     videos and audios which can be taken as evidence. And this can
                     help us fight corruptiotigation incase of more investigation
                     beyond the allegations.
-                  </p>
-                  <p>
-                    And by that can help us follow up for easy tracking of that give
-                    file number basing on the content upload files forexample the
-                    videos and audios which can be taken as other to easy
-                    investigation incase of more investigation beyond the allegations.
-                  </p>
-                  <p>
+                  </p> -->
+                  <!-- <p>
                     Thanks for you coperation for God and my country mission free
                     corruption world with trasparent budgets.
-                  </p>
+                  </p> -->
                 </div>
               </div>
           </section>
