@@ -39,19 +39,19 @@
                               <div class="modal-body">
                                 <form method="" class="form text-start">
                                       <div class="label0">
-                                          <label for="email">Email:</label>
-                                          <input type="email" name="email" placeholder="example@domain.com" required><br>
+                                          <label for="email" class="col-sm-3">Email:</label>
+                                          <input type="email" name="email" placeholder="example@domain.com" required class="form-control col-sm-9"><br>
                                       </div>
                                       <div class="label0">
-                                          <label for="password">Password:</label>
-                                          <input type="password" name="password" placeholder="Password" required minlength="8">
+                                          <label for="password" class="col-sm-3">Password:</label>
+                                          <input type="password" name="password" placeholder="Password" required minlength="8" class="form-control col-sm-9">
                                       </div>
                                       
                                       <div class="login_button">
                                           <a class="term" href="#">Forgot Password</a>
                                           <br><br>
-                                          <button id="button" type="submit" name="login"><a href="./loggedin.html">Login</a></button>
-                                          <br><br>
+                                          <button id="button" type="submit" name="login" class="bg-dark"><a href="./loggedin.html" class="text-decoration-none text-light">Login</a></button>
+                                          <br>
                                           <h6>if you don`t have <a class="term" href="#" id="#miles">Sign Up</a> an account with us</h6>
                                       </div>
                                 </form>
@@ -62,8 +62,65 @@
                             </div>
                           </div>
                         </div>
+                        <!-- sign in button -->
+                        <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#myModal0">
+                          SignUp
+                        </button>
+                        <div class="modal fade" id="myModal0" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+
+                              <div class="modal-header bg-info">
+                                <h4 class="modal-title">SignUp</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                              </div>
+
+                              <div class="modal-body">
+                                <form method="post" class="form">
+                                  <div class="label0">
+                                      <label for="firstname">First Name:</label>
+                                      <input type="text" name="first name" placeholder="First Name" required class="form-control">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="lastname">Last Name:</label>
+                                      <input type="text" name="last name" placeholder="Last Name" required class="form-control">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="date of birth">Date Of Birth:</label>
+                                      <input type="date" name="date of birth" required class="form-control">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="email">Email:</label>
+                                      <input type="email" name="email" placeholder="example@domain.com" required class="form-control">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="number">Contact:</label>
+                                      <input type="tel" name="phone number" required pattern="^\d{10}$" placeholder="0700000000" class="form-control">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="password">Password:</label>
+                                      <input type="password" name="password" placeholder="Enter Password" required minlength="8" class="form-control">
+                                  </div>
+                                  <div class="label0">
+                                      <label for="re-confirm">Confirm password:</label>
+                                      <input type="password" name="confirm Password" placeholder="Confirm Password" required minlength="8" class="form-control">
+                                  </div>
+                                  <br>
+                                  <div class="login_button">
+                                      <h3>By creating the account you agree with our <a class="term" target="_blank" href="./terms.html">Terms and Conditions</a></h3><br>
+                                      <a href="./loggedin.html"><button id="button" type="submit" name="create an account" onclick="alert(sure)">Create Account</button></a><br><br>
+                                      <h4>I have an account with you <a class="term" href="#">Login</a></h4>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <!-- <a class="link" href="./signup.html">Sign Up</a> -->
-                        <div class="">
+                        <!-- <div class="">
                           <button class="btn text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#miles">
                             SignUp
                           </button>
@@ -114,7 +171,7 @@
                                   </div>
                                 </form>
                           </div>
-                        </div>
+                        </div> -->
                 </nav>
             </header>
             <section>
