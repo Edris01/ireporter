@@ -147,12 +147,22 @@
         </header>
         <section>
             <form>
-                <fieldset>
+                <!-- <fieldset> -->
                     <legend>Fill in the form</legend>
-                    <textarea placeholder="your message" cols="80" rows="10"></textarea><br><br>
-                    <input type="file" name="file" value="choose a file"><br><br>
-                    <a href="./submitted.html"><input class="button btn btn-dark" type="button" value="Upload"></a>
-                </fieldset>
+                    <!-- <textarea placeholder="your message" cols="80" rows="10"> -->
+                        <div class="">
+                            <div class="">
+                                <input type="text" placeholder="subject" class="form-control"><br>
+                                <!-- <textarea name="subject" id="" cols="30" rows="2"></textarea> -->
+                            </div>
+                            <div class="">
+                                <textarea name="Mesaage" id="" cols="30" rows="10" class="form-control" value="Message" placeholder="Message"></textarea>
+                            </div>
+                        </div><br>
+                    <!-- </textarea><br><br> -->
+                    <input type="file" name="file" value="choose a file" class="form-control"><br>
+                    <a href="./submitted.html"><input class="button btn btn-dark pt-2" type="button" value="Upload"></a>
+                <!-- </fieldset> -->
             </form>
         </section>
         <footer>
