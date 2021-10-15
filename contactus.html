@@ -50,7 +50,7 @@
                                       <div class="login_button">
                                           <a class="term" href="#">Forgot Password</a>
                                           <br><br>
-                                          <a href="./loggedin.html"><button id="button" type="submit" name="login">Login</button></a>
+                                          <button id="button" type="submit" name="login" class="bg-dark"><a href="./loggedin.html" class="text-decoration-none text-light">Login</a></button>
                                           <br><br>
                                           <h6>if you don`t have <a class="term" href="#" id="#miles">Sign Up</a> an account with us</h6>
                                       </div>
@@ -63,58 +63,62 @@
                           </div>
                         </div>
                         <!-- <a class="link" href="./signup.html">Sign Up</a> -->
-                        <div class="">
-                          <button class="btn text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#miles">
+                        <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#myModal0">
                             SignUp
                           </button>
-                        </div>
-                        <div class="offcanvas offcanvas-end" style="width: 80%;" id="miles">
-                          <div class="offcanvas-header bg-info">
-                            <h3 class="offcanvas-title">Sign up to become a Reporter</h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                          <div class="modal fade" id="myModal0" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+  
+                                <div class="modal-header bg-info">
+                                  <h4 class="modal-title">SignUp</h4>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+  
+                                <div class="modal-body">
+                                  <form method="post" class="form">
+                                    <div class="label0">
+                                        <label for="firstname">First Name:</label>
+                                        <input type="text" name="first name" placeholder="First Name" required class="form-control">
+                                    </div>
+                                    <div class="label0">
+                                        <label for="lastname">Last Name:</label>
+                                        <input type="text" name="last name" placeholder="Last Name" required class="form-control">
+                                    </div>
+                                    <div class="label0">
+                                        <label for="date of birth">Date Of Birth:</label>
+                                        <input type="date" name="date of birth" required class="form-control">
+                                    </div>
+                                    <div class="label0">
+                                        <label for="email">Email:</label>
+                                        <input type="email" name="email" placeholder="example@domain.com" required class="form-control">
+                                    </div>
+                                    <div class="label0">
+                                        <label for="number">Contact:</label>
+                                        <input type="tel" name="phone number" required pattern="^\d{10}$" placeholder="0700000000" class="form-control">
+                                    </div>
+                                    <div class="label0">
+                                        <label for="password">Password:</label>
+                                        <input type="password" name="password" placeholder="Enter Password" required minlength="8" class="form-control">
+                                    </div>
+                                    <div class="label0">
+                                        <label for="re-confirm">Confirm password:</label>
+                                        <input type="password" name="confirm Password" placeholder="Confirm Password" required minlength="8" class="form-control">
+                                    </div>
+                                    <br>
+                                    <div class="login_button">
+                                        <h3>By creating the account you agree with our <a class="term" target="_blank" href="./terms.html">Terms and Conditions</a></h3><br>
+                                        <a href="./loggedin.html"><button id="button" type="submit" name="create an account" onclick="alert(sure)">Create Account</button></a><br><br>
+                                        <h4>I have an account with you <a class="term" href="#">Login</a></h4>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="offcanvas-body text-start">
-                            <form method="post" class="form">
-                                  <div class="label0">
-                                      <label for="firstname">First Name:</label>
-                                      <input type="text" name="first name" placeholder="First Name" required>
-                                  </div>
-                                  <div class="label0">
-                                      <label for="lastname">Last Name:</label>
-                                      <input type="text" name="last name" placeholder="Last Name" required>
-                                  </div>
-                                  <div class="label0">
-                                      <label for="date of birth">Date Of Birth:</label>
-                                      <input type="date" name="date of birth" required>
-                                  </div>
-                                  <div class="label0">
-                                      <label for="email">Email:</label>
-                                      <input type="email" name="email" placeholder="example@domain.com" required>
-                                  </div>
-                                  <div class="label0">
-                                      <label for="number">Contact:</label>
-                                      <input type="tel" name="phone number" required pattern="^\d{10}$" placeholder="0700000000">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="password">Password:</label>
-                                      <input type="password" name="password" placeholder="Enter Password" required minlength="8">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="re-confirm">Confirm password:</label>
-                                      <input type="password" name="confirm Password" placeholder="Confirm Password" required minlength="8">
-                                  </div>
-                                  <br>
-                                  <div class="login_button">
-                                      <h3>By creating the account you agree with our <a class="term" target="_blank" href="./terms.html">Terms and Conditions</a></h3><br>
-                                      <a href="./loggedin.html"><button id="button" type="submit" name="create an account" onclick="alert(sure)">Create Account</button></a><br><br>
-                                      <h4>I have an account with you <a class="term" href="#">Login</a></h4>
-                                      <br>
-                                      <br>
-                                      <br>
-                                  </div>
-                                </form>
-                          </div>
-                        </div>
                 </nav>
             </header>
             <section>
@@ -122,50 +126,25 @@
                     <div class="contact1">
                         <div class="ct1">CONTACT US</div>
                         <br>
-                        <form>
+                        <form class="form">
                             <div class="contact2">
                                 <div class="">
                                     <label>Fullname</label>
-                                    <input type="text" placeholder="Full name">
+                                    <input type="text" placeholder="Full name" class="form-control">
                                 </div>
                                 <div>
-                                    <label>Email</label>
-                                    <input type="email" placeholder="Email" >
+                                    <label>Email:</label>
+                                    <input type="email" placeholder="Email" class="form-control" >
                                 </div>
                             </div>
                             
-                            <label>Message</label><br>
-                            <textarea cols="108" rows="8">Message</textarea>
+                            <label>Message:</label><br>
+                            <textarea cols="110" rows="8" form-control>Message</textarea>
                             <br>
                             <button type="submit" id="buttonc">Submit</button>
                         </form>
                     </div>
-                    <!-- <div class="contact12">
-                        <div class="ct1">FIND US</div>
-                        <p class="ct2"> 
-                            With more than 50 offices all over the world. we are closer
-                            than you think. we also offer a wide variety of online support
-                            services.
-                            <br>
-                            Through our website <a href="https//.www.ireporter.com">ireporter class="com</a>
-                            and via email, live chat on your website and ability to submiit a case 
-                            online. we are available 24/7
-                        </p>
-                        <button type="submit" id="buttonc">Allocate Us</button>
-                    </div> -->
                 </div>
-                <!-- <div class="home6">
-                    <div class="home7">
-                        <h1>OUR MISSION</h1><hr>
-                        <p>To fight corruption for a free country</p>
-                        <h1>OUR VISSION</h1><hr>
-                        <p>To contrubite to the development of our country to the middle income</p>
-                    </div>
-                    <div>
-                        <img class="home8" src="./assets/image/corruption1.jpg" alt="corruption image">
-                    </div>
-                    <br>
-                </div> -->
             </section>
             <footer>
                 <div class="footer-content">&copy; Copyright 2021 by i-Reporter. All Rights Reserved.</div>
