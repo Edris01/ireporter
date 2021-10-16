@@ -1,0 +1,19 @@
+{
+  "name": "ireporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edris01/ireporter.git"
+  },
+  "author": "edris01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edris01/ireporter/issues"
+  },
+  "homepage": "https://github.com/Edris01/ireporter#readme"
+}
