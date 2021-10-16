@@ -277,3 +277,6 @@ footer.tEnd{
     display: grid;
     grid-template-rows:  auto;
 }
+#map{
+    height: 100%;
+}
