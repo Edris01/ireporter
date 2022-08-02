@@ -1,163 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Citizen-Home</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <meta name="viewport" content="width=device-width, initail-scale=1">
-        <script src="https://kit.fontawesome.com/286dd47235.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="./assets/js/app.js"></script>
-    </head>
-    <body>
-        <div class="container-fluid px-0">
-            <header>
-                <div class="contact">
-                    <div class="contacts"><img src="./assets/image/twitter.png" alt="twitter logo"> @i-reporterUG</div>
-                    <div class="contacts"><img src="./assets/image/facebook.png" alt="facebook logo"> i-reporter Uganda</div>
-                    <div class="contacts"><img src="./assets/image/gmail.png" alt="instagram logo"> irepoarter</div>
-                    <!-- <div class="contacts"><img src="./assets/image/gmail.png" alt="gmail logo"> irepoarter@gmail.com</div> -->
-                </div>
-                <nav class="sticky pb-5">
-                    <div class="name text-end pb-1">i-Reporter</div>
-                    <div class="link-holder d-flex gap-2 justify-content-end">
-                      <a type="button" class="link text-decoration-none pb-1 btn text-light" href="./index.html">Home</a>
-                      <a type="button" class="link text-decoration-none pb-1 btn  text-light" href="./contactus.html">Contact Us</a>
-                        
-                        <!-- <a class="link" href="./login.html">Login</a> -->
-                        <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#myModal">
-                          Login
-                        </button>
-                        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i-Reporter | Home</title>
+    <!-- font Awesome icons  -->
+    <script
+      src="https://kit.fontawesome.com/286dd47235.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <!-- customized css  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>
+          <a href="index.html" class="logo-text"><span>I</span>-Reporter</a>
+        </h2>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- User page -->
+    <div class="user-display">
 
-                              <div class="modal-header bg-info">
-                                <h4 class="modal-title">Login</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                              </div>
+        <!-- user content -->
+        <div class="user-content">
+          <h2 class="text-dark text-center">Home page</h2>
 
-                              <div class="modal-body">
-                                <form method="" class="form text-start">
-                                      <div class="label0">
-                                          <label for="email" class="col-sm-3">Email:</label>
-                                          <input type="email" name="email" placeholder="example@domain.com" required class="form-control col-sm-9"><br>
-                                      </div>
-                                      <div class="label0">
-                                          <label for="password" class="col-sm-3">Password:</label>
-                                          <input type="password" name="password" placeholder="Password" required minlength="8" class="form-control col-sm-9">
-                                      </div>
-                                      
-                                      <div class="login_button row gap-4">
-                                          <a class="term small text-danger" href="#">Forgot Password</a>
-                                          
-                                          <button id="button" type="submit" name="login" class="bg-dark"><a href="./loggedin.html" class="text-decoration-none text-light">Login</a></button>
-                                          
-                                          <h6>if you don`t have <a class="term small" href="#myModal0" id="#miles">Sign Up</a> an account with us</h6>
-                                      </div>
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- sign in button -->
-                        <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#myModal0">
-                          SignUp
-                        </button>
-                        <div class="modal fade" id="myModal0" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-                          <div class="modal-dialog mw-100 container">
-                            <div class="modal-content">
-
-                              <div class="modal-header bg-info">
-                                <h4 class="modal-title">SignUp</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                              </div>
-
-                              <div class="modal-body">
-                                <form method="post" class="form">
-                                  <div class="label0">
-                                      <label for="firstname">First Name:</label>
-                                      <input type="text" name="first name" placeholder="First Name" required class="form-control">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="lastname">Last Name:</label>
-                                      <input type="text" name="last name" placeholder="Last Name" required class="form-control">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="date of birth">Date Of Birth:</label>
-                                      <input type="date" name="date of birth" required class="form-control">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="email">Email:</label>
-                                      <input type="email" name="email" placeholder="example@domain.com" required class="form-control">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="number">Contact:</label>
-                                      <input type="tel" name="phone number" required pattern="^\d{10}$" placeholder="0700000000" class="form-control">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="password">Password:</label>
-                                      <input type="password" name="password" placeholder="Enter Password" required minlength="8" class="form-control">
-                                  </div>
-                                  <div class="label0">
-                                      <label for="re-confirm">Confirm password:</label>
-                                      <input type="password" name="confirm Password" placeholder="Confirm Password" required minlength="8" class="form-control">
-                                  </div>
-                                  <br>
-                                  
-                                  <div class="login_button">
-                                      <div>By creating the account you agree with our <a class="term small" target="_blank" href="./terms.html">Terms and Conditions</a></div><br>
-                                      <a href="./loggedin.html"><button class="btn btn-dark" id="button" type="submit" name="create an account">Create Account</button></a><br><br>
-                                      <h4>I have an account with you <a class="term" href="#myModal">Login</a></h4>
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                </nav>
-            </header>
-            <section>
-              
-              <div class="carousel side pt-0" id="demo" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active element-background-overlay">
-                    <img src="./assets/image/corruption.jpg" alt="corruption" class="d-block h-50" style="width: 100%;">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/image/corruption.jpg" alt="corruption" class="d-block h-50" style="width: 100%;">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/image/corruption.jpg" alt="corruption" class="d-block h-25" style="width: 100%;">
-                  </div>
-                </div>
-              </div>
-              <div class="home0 pt-0">
-                <div class="home3">
-                  <p>
-                    <h3 class="text-danger">i-reporter</h3> Is a web-based application that is
-                    designed to fight corruption. in the world and this can be made by
-                    you helping us and you raise corruption issues through opening an
-                    account with us.
-                    Thanks for you coperation for God and my country mission free
-                    corruption world with trasparent budgets.
-                  </p>
-                </div>
-              </div>
-          </section>
-          <footer>
-              <div class="footer-content">
-                  &copy; Copyright 2021 by i-Reporter. All Rights Reserved.
-              </div>
-          </footer>
         </div>
-    </body>
+    </div>
+
+    <!-- JQuery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
